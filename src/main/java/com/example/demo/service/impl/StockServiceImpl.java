@@ -17,6 +17,7 @@ public class StockServiceImpl implements StockService {
 
     @Override
     public List<Stock> getStock(String tableName, Long from, Long to) {
-        return stockMapper.getStock(tableName, from, to);
+        List<Stock> stockData = stockMapper.getStock(tableName, from, to);
+        return stockData;
     }
 }
